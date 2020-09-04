@@ -1,5 +1,7 @@
 #include<bits/stdc++.h>
+
 using namespace std;
+
 #define gc getchar_unlocked
 #define fo(i,n) for(i=0;i<n;i++)
 #define Fo(i,k,n) for(i=k;k<n?i<n:i>n;k<n?i+=1:i-=1)
@@ -40,7 +42,7 @@ void dfs(int u, int par);
 
 const int mod = 1'000'000'007;
 const int N = 3e5, M = N;
-//=======================
+/* ***************************************************************************************************** */
 
 vi g[N];
 int a[N];
@@ -89,5 +91,3 @@ void dfs(int u, int par){
 		dfs(v, u);
 	}
 }
-
-
