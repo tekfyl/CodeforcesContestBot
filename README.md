@@ -1,11 +1,8 @@
-# Live Demo
-Watch the YouTube video showing the live demo -> [here](https://www.youtube.com/watch?v=MXYmbJO4bqU)
-
 # Setup/Installation
 ```bash
 INSTALLATION_PATH="<directory_path_where_you_want_to_clone>"; # also the dir where you will write solution
 cd $INSTALLATION_PATH
-git clone https://github.com/rachitiitr/CodeforcesContestBot.git
+git clone https://github.com/tekfyl/CodeforcesContestBot.git
 cd CodeforcesContestBot
 npm install
 ```
