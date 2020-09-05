@@ -6,12 +6,6 @@ using namespace std;
 #define fo(i,n) for(i=0;i<n;i++)
 #define Fo(i,k,n) for(i=k;k<n?i<n:i>n;k<n?i+=1:i-=1)
 #define ll long long
-#define si(x)	scanf("%d",&x)
-#define sl(x)	scanf("%lld",&x)
-#define ss(s)	scanf("%s",s)
-#define pi(x)	printf("%d\n",x)
-#define pl(x)	printf("%lld\n",x)
-#define ps(s)	printf("%s\n",s)
 #define deb(x) cout << #x << "=" << x << endl
 #define deb2(x, y) cout << #x << "=" << x << "," << #y << "=" << y << endl
 #define pb push_back
@@ -42,10 +36,17 @@ void dfs(int u, int par);
 
 const int mod = 1'000'000'007;
 const int N = 3e5, M = N;
-/* ***************************************************************************************************** */
 
-vi g[N];
+/* ************************************************************************************************************** */
+
+char c;
+string s;
 int a[N];
+vi v;
+vi g[N];
+
+/* ************************************************************************************************************** */
+
 
 void solve() {
   int i, j, n, m;
@@ -57,9 +58,9 @@ int main() {
 
     int t = 1;
     cin >> t;
-    while(t--) {
+    while(t--)
       solve();
-    }
+    
 
     return 0;
 }
