@@ -30,6 +30,19 @@ int rng(int lim) {
 	uniform_int_distribution<int> uid(0,lim-1);
 	return uid(rang);
 }
+
+template<typename T> T gcd(T a, T b) { return (b == 0) ? abs(a) : gcd(b, a % b); }
+template<typename T> inline T lcm(T a, T b) { return a / gcd(a, b) * b; }
+template<typename T> inline T sqr(T x) { return x * x; }
+template<typename T> inline string tostring(const T& x) { oss os; os << x; return os.str(); }
+ 
+inline string tolower(string s) { tr(it, s) *it = tolower(*it); return s; }
+inline string toupper(string s) { tr(it, s) *it = toupper(*it); return s; }
+inline int todecimal(string s) { int a = 0; for(int i; i<s.size(); i++) a = 2*a + ( s[i] - '0' ); return a; }
+inline string tobinary( int a) { string s; while( a != 0 ) { s = (char)(a%2+'0') + s; a>>=1; } return s; }
+inline int isvowel( char c ) { if ( c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ) return 1; return 0; }
+inline int isprime( int a ) {  for ( int i = 2; i*i <= a; i++ ) if (!(a%i)) return 0; return 1; }
+
 int mpow(int base, int exp); 
 void ipgraph(int n, int m);
 void dfs(int u, int par);
