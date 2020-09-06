@@ -34,7 +34,6 @@ int rng(int lim) {
 template<typename T> T gcd(T a, T b) { return (b == 0) ? abs(a) : gcd(b, a % b); }
 template<typename T> inline T lcm(T a, T b) { return a / gcd(a, b) * b; }
 template<typename T> inline T sqr(T x) { return x * x; }
-template<typename T> inline string tostring(const T& x) { oss os; os << x; return os.str(); }
  
 inline string tolower(string s) { tr(it, s) *it = tolower(*it); return s; }
 inline string toupper(string s) { tr(it, s) *it = toupper(*it); return s; }
