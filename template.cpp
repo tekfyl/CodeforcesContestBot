@@ -54,6 +54,7 @@ const int N = 3e5, M = N;
 char c;
 string s;
 int a[N];
+int dp[N];
 vi v;
 vi g[N];
 
@@ -107,5 +108,5 @@ void dfs(int u, int par){
 
 	}
   // parental stuff
-  
+
 }
