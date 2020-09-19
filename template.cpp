@@ -98,8 +98,14 @@ void ipgraph(int n, int m){
 }
 
 void dfs(int u, int par){
+  // leafy stuff
+
 	for(int v:g[u]){
 		if (v == par) continue;
 		dfs(v, u);
+    // children stuff
+
 	}
+  // parental stuff
+  
 }
