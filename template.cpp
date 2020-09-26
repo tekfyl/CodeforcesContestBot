@@ -10,8 +10,6 @@ using namespace std;
 #define deb2(x, y) cout << #x << "=" << x << "," << #y << "=" << y << endl
 #define pb push_back
 #define mp make_pair
-#define ii pair <int, int>
-#define LL pair <ll, ll>
 #define fi first
 #define se second
 #define mx max_element
