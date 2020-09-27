@@ -64,17 +64,6 @@ vi g[N];
 
 /* ************************************************************************************************************** */
 
-int mpow(int base, int exp) {
-  base %= mod;
-  int result = 1;
-  while (exp > 0) {
-    if (exp & 1) result = ((ll)result * base) % mod;
-    base = ((ll)base * base) % mod;
-    exp >>= 1;
-  }
-  return result;
-}
-
 void ipgraph(int n, int m){
 	int i, u, v;
 	while(m--){
