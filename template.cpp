@@ -99,7 +99,7 @@ void dfs(int u, int par){
 }
 
 void solve() {
-  ll j, n, m, in, ans=0;
+  ll i=0, j=0, n=0, m=0, in=0, ans=0;
 
 }
 
